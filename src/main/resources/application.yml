@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/postgres
+    driver-class-name: org.postgresql.Driver
+    username: chengyuxing
+    password:
+
+
+logging:
+  level:
+    com.github.chengyuxing.sql: debug
+
+baki:
+  highlight-sql: true
+  xql-file-manager:
+    files:
+      test: test.sql
+    pipes:
+      len: org.example.config.Length
+  debug-full-sql: true
